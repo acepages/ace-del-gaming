@@ -281,6 +281,7 @@ body::before {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem; /* Reducido de 3rem a 2rem para acercar más al título */
+    align-items: stretch;
 }
 
 .product-card {
@@ -293,6 +294,10 @@ body::before {
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .product-card::before {
